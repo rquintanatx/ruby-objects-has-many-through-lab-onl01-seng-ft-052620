@@ -17,4 +17,14 @@ class Patient
     end 
   end 
   
+  def doctors 
+    appointments.collect do |appt|
+      appt.doctor 
+    end 
+  end 
+  
+  def self.all 
+    @@all 
+  end
+  
 end 
