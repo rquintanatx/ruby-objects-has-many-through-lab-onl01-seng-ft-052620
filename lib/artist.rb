@@ -22,5 +22,7 @@ class Artist
   end 
   
   def genres 
-    Genr.all.select do |
+    songs.collect do |song|
+      song.genre 
+    end 
 end 
