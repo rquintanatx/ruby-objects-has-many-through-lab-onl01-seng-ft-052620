@@ -19,7 +19,7 @@ class Doctor
   end 
   
   def patients
-    binding.pry
+    
     appointments.collect do |appointment| 
       appointment.patient
     end 
